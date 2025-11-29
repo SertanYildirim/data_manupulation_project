@@ -1,31 +1,45 @@
-# 🔍 Streamlit Data Manipulation & Analysis Tool
+# 📈 Data Master: Advanced Time Series & ETL Platform
 
-A comprehensive, **No-Code Data Analysis Platform** built with **Python** and **Streamlit**. This application allows users to perform end-to-end data science workflows—from data ingestion and cleaning to advanced feature engineering and time series analysis—through a user-friendly interactive interface.
+A comprehensive, **No-Code Data Analysis Platform** built with **Python & Streamlit**. This application facilitates the entire **ETL (Extract, Transform, Load)** and **Predictive Modeling** lifecycle through an intuitive, modular interface. This project demonstrates expertise in building production-ready data pipelines and quantitative analysis tools.
 
-## 🚀 Key Features
+## 🚀 Architectural Highlights
 
-The application is structured into modular components, ensuring scalability and ease of maintenance:
+* **End-to-End Pipeline:** Covers the complete workflow: from **Inference (Loading)** to **Advanced Transformation** to **Persistence (Exporting)**.
+* **Deep Learning & Econometrics:** Integrates both traditional models (ARIMA/SARIMAX) and deep learning models (LSTM/GRU) for forecasting sequential data.
+* **MLOps Readiness:** Modular architecture ensures scalability and ease of integration into larger MLOps/Data Engineering workflows.
 
-* **📥 Data Ingestion:** Upload CSV, Excel, or JSON files seamlessly.
-* **📊 EDA (Exploratory Data Analysis):** Automated summary statistics, correlation matrices, and distribution checks.
-* **🧼 Data Cleaning:** Handle missing values (imputation/dropping) and duplicates visually.
-* **⚠️ Outlier Detection:** Identify and handle outliers using statistical methods (IQR, Z-Score).
-* **✨ Feature Engineering:** Create new variables, scale features (MinMax, Standard), and encode categorical data.
-* **⏱️ Time Series Analysis:** Analyze trends, seasonality, and perform decomposition on date-time data.
-* **📈 Visualization:** Generate dynamic charts (Line, Bar, Scatter, Heatmap) using Plotly/Matplotlib.
-* **💾 Export:** Download the processed and cleaned datasets for external use.
+## 🧠 Feature Matrix (Technical Scope)
 
-## 🛠️ Tech Stack
+| Phase | Module Focus | Advanced Capabilities & Tools |
+| :--- | :--- | :--- |
+| **Data Ingestion** | Loader | Auto-detects delimiter, supports CSV, JSON, XLSX, and SQLite DB files. |
+| **Data Cleaning** | Missing Data & Outliers | **KNN Imputer** (AI-based missing value replacement) and **DBSCAN** (Clustering for outlier detection). |
+| **Feature Engineering** | Transformation | **One-Hot Encoding, Min-Max Scaling,** and **Dynamic Feature Creation** (generating custom features using `exec()`). |
+| **Forecasting** | Time Series | **6 Diverse Models:** **LSTM, GRU, Prophet, SARIMAX, ARIMA, TES.** |
+| **Persistence (Export)** | Exporter | Direct data transfer to **PostgreSQL, MSSQL, MongoDB,** and Parquet file formats. |
 
-* **Frontend & UI:** Streamlit
-* **Core Logic:** Python 3.10+
-* **Data Manipulation:** Pandas, NumPy
+## 🛠️ Technical Stack
+
+* **Frontend:** Streamlit (Interactive UI)
+* **Core Logic:** Python 3.10+, Pandas, NumPy
+* **Machine Learning:** Scikit-learn, Keras/TensorFlow (**LSTM/GRU**), Statsmodels
 * **Visualization:** Plotly, Matplotlib, Seaborn
-* **Statistical Analysis:** Scipy, Statsmodels
+* **Database Connectors:** SQLAlchemy (PostgreSQL, MSSQL), PyMongo (MongoDB)
 
-## 🏗️ System Architecture
+## 📦 How to Run
 
-The application uses a modular architecture controlled by a central Session State manager, routing user actions to specific processing modules.
+1.  **Clone the repository.**
+2.  **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+3.  **Start Application:**
+    ```bash
+    streamlit run main.py
+    ```
+
+---
+*This project demonstrates expertise in Full-Stack Data Engineering, Advanced Statistical Modeling, and MLOps Readiness.*
 
 ![System Architecture](Data_Manipulation_Architecture.png)
 
